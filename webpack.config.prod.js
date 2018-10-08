@@ -46,7 +46,10 @@ export default {
         minifyCSS: true,
         minifyURLs: true
       },
-      inject: true
+      inject: true,
+      // Properties you define here are available in index.html
+      // using htmlWebpackPlugin.options.varName
+      trackJSToken: "ee496cb34a5a4766bccc2318c9462747"
     }),
 
     // Eliminate duplicate packages when generating boundle

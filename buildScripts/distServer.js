@@ -15,15 +15,6 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
-app.get('/users', function(req, res) {
-  // Hard coding for simplicity, Pretend this hits a real databse
-  res.json([
-    {"id":1, "firstName":"aaa", "lastName":"bbb", "email":"ab@gmail.com"},
-    {"id":1, "firstName":"ccc", "lastName":"ddd", "email":"cd@gmail.com"},
-    {"id":1, "firstName":"eee", "lastName":"fff", "email":"ef@gmail.com"},
-  ]);
-});
-
 app.listen(port, function(err){
   if(err) {
     console.log(err);
